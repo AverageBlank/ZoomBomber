@@ -1,1 +1,4 @@
 selenium           # ? Required for interacting with the browser
+pyautogui          # ? Required for sending keyboard and mouse input
+questionary        # ? Required for command line interface
+rich               # ? Required for command line interface

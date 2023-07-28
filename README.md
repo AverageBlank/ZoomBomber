@@ -7,6 +7,7 @@
 ```
 pip install -r requirements.txt
 ```
+- **Chrome:** Have the Google Chrome browser installed.
 - **ChromeDrivers [Optional]:**
    - Might need to install ChromeDriver in some instances
 - Change names in names.txt which will be used in the meeting.
