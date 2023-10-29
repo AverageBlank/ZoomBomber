@@ -1,6 +1,6 @@
 # **ZoomBomber**
 
-Zoom Bomber is a project I've dedicated time to as a way of learning a web-driver package called Selenium. The idea was inherently to join zoom meetings with provided links and/or ID & Password pair that opens multiple browser instances using Selenium to exploit the "Join With Browser" functionality in the Zoom webapp.
+Zoom Bomber is a project we've dedicated time to as a way of learning a web-driver package called Selenium. The idea was inherently to join zoom meetings with provided links and/or ID & Password pair that opens multiple browser instances using Selenium to exploit the "Join With Browser" functionality in the Zoom webapp.
 
 - FOR **EDUCATIONAL PURPOSES ONLY** (Please use it at your own risk)
 
