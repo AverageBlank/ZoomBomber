@@ -44,16 +44,6 @@ def setSelenium():
     allNames = open("names.txt", "r").read().split("\n")
 
 
-# * Clicking cancel on the zoom popup
-def handleZoomPrompt():
-    sleep(0.25)
-    try:
-        # ? Searches for the cancel button to click onto
-        x, y = locateCenterOnScreen("zoom_prompt.png")
-        click(x, y)
-    except Exception as e:
-        print("Error handling Zoom prompt:", str(e))
-
 # * Clicking join from browser on the page
 def clickJoinFromBrowser():
     try:
@@ -110,7 +100,7 @@ def idPass(id=None, password=None):
 def link(link=None):
     # ? If link is not provided
     if link == None:
-        link = text("Enter Zoom Meeting Link:", style=minimalStyle).ask()
+        link = text("Enter Zoom Meeting Link:", style=minimalStyle).ask() + "#success"
 
     # ? Creating a loop for all the names provided
     for name in allNames:
@@ -119,17 +109,15 @@ def link(link=None):
 
         # ? Opening the website
         driver.get(link)
-        sleep(0.5)
 
         # ? Bypassing prompt to open zoom in the browser
-        keyDown("return")
         launchApp = driver.find_element(By.CLASS_NAME, "mbTuDeF1")
         launchApp.click()
-        handleZoomPrompt()
+        sleep(0.5)
         clickJoinFromBrowser()
 
         # ? Entering name
-        sleep(3)
+        sleep(5)
         user = driver.find_element(By.ID, "input-for-name")
         user.clear()
         user.send_keys(name)
