@@ -1,4 +1,4 @@
-## **ZoomBomber**
+# **ZoomBomber**
 
 Zoom Bomber is a project I've dedicated time to as a way of learning a web-driver package called Selenium. The idea was inherently to join zoom meetings with provided links and/or ID & Password pair that opens multiple browser instances using Selenium to exploit the "Join With Browser" functionality in the Zoom webapp.
 
@@ -9,15 +9,12 @@ Zoom Bomber is a project I've dedicated time to as a way of learning a web-drive
 ### Python
 
 Have Python3 language installed as the program was written in it.
-
 It can be installed using https://www.python.org/downloads/
 
 - Below are the python libraries used for running the program, you can run either of the code blocks to download all the libraries.
-
 ```
 pip install selenium, pyautogui, questionary, rich
 ```
-
 ```
 pip install -r requirements.txt
 ```
@@ -25,7 +22,6 @@ pip install -r requirements.txt
 ### Chrome
 
 Have Chrome browser installed as the program is based on the chrome drivers.
-
 It can be installed using https://www.google.com/chrome/
 
 ## **How It Works**
